@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3a68d89597.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM Sans:wght@400;700&amp;family=Lora:wght@400;600&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&amp;family=Open+Sans:wght@400;600&amp;display=swap"
+        rel="stylesheet">
+    <link id="theme-link" rel="stylesheet" href="./dist/notheme.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--? Navbar -->
+
+    <nav class="navbar navbar-expand-md bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Atom 2.0</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasMd"
+                aria-controls="navbarOffcanvasMd" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasMd"
+                aria-labelledby="navbarOffcanvasMdLabel">
+                <div class="offcanvas-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown link
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <!--? Carousel -->
+
+    <div id="carouselContainer" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="src/images/slide-1.jpg" class="object-fit-cover d-block w-100 vh-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="src/images/slide-2.jpg" class="object-fit-cover d-block w-100 vh-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="src/images/slide-3.jpg" class="object-fit-cover d-block w-100 vh-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselContainer" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselContainer" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!--? Basic Item -->
+
+    <div id="items" class="d-flex flex-column gap-5">
+        <section id="basicItem">
+            <div class="container">
+                <h2 class="">Basic Item</h2>
+                <h3 class="">Subheading</h3>
+                <p>Using a series of utilities, you can create this jumbotron, just like the one in
+                    previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to
+                    your liking.</p>
+                <button class="btn btn-primary" type="button">Example button</button>
+            </div>
+        </section>
+
+        <!--? Icon Container -->
+
+        <section class="bg-light">
+            <div class="container " id="iconContainer">
+                <h2>Icon Container</h2>
+                <div class="d-flex flex-wrap row">
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="icon align-items-center justify-content-center flex-shrink-0">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div>
+                            <h3>Featured title</h3>
+                            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with
+                                another
+                                sentence and probably just keep going until we run out of words.</p>
+                            <a href="#" class="btn btn-primary">
+                                Primary button
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="icon align-items-center justify-content-center flex-shrink-0">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div>
+                            <h3>Featured title</h3>
+                            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with
+                                another
+                                sentence and probably just keep going until we run out of words.</p>
+                            <a href="#" class="btn btn-secondary">
+                                Secondary button
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="icon align-items-center justify-content-center flex-shrink-0">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div>
+                            <h3>Featured title</h3>
+                            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with
+                                another
+                                sentence and probably just keep going until we run out of words.</p>
+                            <a href="#" class="btn btn-warning">
+                                Warning button
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class=" icon align-items-center justify-content-center flex-shrink-0">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div>
+                            <h3>Featured title</h3>
+                            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with
+                                another
+                                sentence and probably just keep going until we run out of words.</p>
+                            <a href="#" class="btn btn-danger">
+                                Danger button
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <!--? Gallery Container -->
+
+    <section>
+        <div class="container " id="Gallery">
+            <h2 class="pb-2 border-bottom">Custom cards</h2>
+
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark shadow-lg"
+                        style="background-image: url('./src/images/slide-1.jpg'); background-size: cover; background-position: center center;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                                        class="rounded-circle border border-white">
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg>
+                                    <small>Earth</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3"></use>
+                                    </svg>
+                                    <small>3d</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark shadow-lg"
+                        style="background-image: url('./src/images/slide-2.jpg'); background-size: cover; background-position: center center;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple
+                                lines
+                            </h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                                        class="rounded-circle border border-white">
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg>
+                                    <small>Pakistan</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3"></use>
+                                    </svg>
+                                    <small>4d</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark shadow-lg"
+                        style="background-image: url('./src/images/slide-3.jpg'); background-size: cover; background-position: center center;">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                                        class="rounded-circle border border-white">
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg>
+                                    <small>California</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3"></use>
+                                    </svg>
+                                    <small>5d</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--? Footer -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-2 mb-3 flex-grow-1">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-2 mb-3 flex-grow-1">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-2 mb-3 flex-grow-1">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Monthly digest of what's new and exciting from us.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>© 2024 Company, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#twitter"></use>
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#instagram"></use>
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#facebook"></use>
+                            </svg></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="z-3 bg-light p-4 shadow-lg" id="themeSwitcher" style="position: fixed; right: 20px; bottom: 20px">
+        <h3>Theme Switcher</h3>
+
+        <div class="d-flex flex-column gap-3">
+            <!-- Buttons to switch themes -->
+            <button class="btn btn-primary" onclick="switchTheme('notheme')">No Theme</button>
+            <button class="btn btn-secondary" onclick="switchTheme('theme1')"> Theme 1</button>
+            <button class="btn btn-warning" onclick="switchTheme('theme2')">Theme 2</button>
+
+        </div>
+        <script>
+            function switchTheme(theme) {
+                var link = document.getElementById('theme-link');
+
+                // Update the href of the link element to load the selected theme
+                if (theme === 'theme1') {
+                    link.href = 'dist/theme1.css';  // Link to Theme 1 CSS
+                } else if (theme === 'theme2') {
+                    link.href = 'dist/theme2.css';  // Link to Theme 2 CSS
+                }
+
+                else if (theme === 'notheme') {
+                    link.href = 'dist/notheme.css';  // Link to Theme 2 CSS
+                }
+            }
+        </script>
+
+        <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    </div>
+</body>
+
+</html>
